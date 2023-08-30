@@ -20,13 +20,13 @@ steps:
     #npm run build
     npm audit fix --force
   displayName: 'npm install and audit fix'
-- task: CopyFiles@2
-  inputs:
-    Contents: '**/.json'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'jsonfile'
-    publishLocation: 'Container'
+# - task: CopyFiles@2
+#   inputs:
+#     Contents: '**/.json'
+#     TargetFolder: '$(build.artifactstagingdirectory)'
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+#     ArtifactName: 'jsonfile'
+#     publishLocation: 'Container'
 
