@@ -23,3 +23,7 @@ steps:
 - script: 
     npm audit fix --force
   displayName: 'npm audit fix'
+steps:
+- script: 
+    echo "hello npm module"
+  displayName: '2nd stage just to display text'
