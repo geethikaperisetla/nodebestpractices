@@ -11,12 +11,15 @@ pool:
 
 steps:
 # - task: NodeTool@0
-#   inputs:
+#    inputs:
 #     versionSpec: '10.x'
 #   displayName: 'Install Node.js'
 
 - script: |
     npm install
     #npm run build
+    #npm audit fix --force
+  displayName: 'npm install'
+- script: 
     npm audit fix --force
-  displayName: 'npm install and build'
+  displayName: 'npm audit fix'
