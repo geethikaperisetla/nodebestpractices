@@ -17,6 +17,8 @@ steps:
 
 - script: |
     npm install
+    pwd 
+    ls -latr
     #npm run build
     npm audit fix --force
   displayName: 'npm install and audit fix'
