@@ -36,7 +36,7 @@ steps:
 #      publishLocation: 'Container'
 - task: CopyFiles@2
   inputs:
-    Contents: '**/*.json'
+    Contents: '**/*package.json'
     TargetFolder: '$(agent.builddirectory)'
 - script: 
     echo '$(TargetFolder)'
